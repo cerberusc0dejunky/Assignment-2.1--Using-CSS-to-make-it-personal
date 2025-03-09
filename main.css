@@ -24,7 +24,7 @@
     
   h1 {
     color: #ffffff;
-    background-image: url(images/backgrounds/header-bg.png);
+    background-image: url(assets/backgrounds/header-bg.png);
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -55,7 +55,6 @@ color: changes the text color to white, background-image uses an image to set th
  /* instead of having this as headerimg like I did before I finally figured out the ID I wasnt capitalizing the "i" in memeimg but i ended up figuring it out. then I used top to off set it from the top most margin by 30%  and gave the background a slight difference. (ive seen section designs like this and i was curious how one could do that i think i did it!) then I gave it a box shadow effect. Box shadow effect is similar to border except it drops a shadow under each line from top -->right---->bottom---->left if you want all four sides to show a shadow you have to assign a px amount just to emphasize the image.  */
 
  .objectives {
-  border: yellow 4px solid;
   font-size: 20px;
   line-height: 30px;
   padding: 8px;
@@ -86,7 +85,7 @@ color: changes the text color to white, background-image uses an image to set th
   
   
   .sidebar {
-    background-image: url(images/backgrounds/sidebbg.png);
+    background-image: url(assets/backgrounds/sidebbg.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: fixed;
