@@ -1,0 +1,61 @@
+<!-- Chrisleigh Granger -->
+<!-- This tells the browser what kind of page this is HTML5 -->
+<!DOCTYPE html>
+<!-- This tells the browser what language the browser should be in  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- defines what characters will be found on the page so it displays correctly  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tells the browser to match the height an width of the users device  -->
+    <title>Homepage</title>
+    <!-- this is the title of the page it shows up in the tab of the window -->
+    <link rel="stylesheet" href="main.css">
+    <!-- link rel tells the browser its looking for a stylesheet to format the page and where to find it  -->
+</head>
+
+<!-- the body is where you put all the content you want the user to see -->
+
+<body>
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <!-- i eventually want to put this porfolio page into the site i built in introduction to webdesign so I chose the sidebar because that website has a topnav -->
+        <ul>
+            <!-- a navigation is an unordered list of links -->
+            <li><a href="index.html">Homepage</a></li>
+            <!-- this list links to my homepage -->
+            <li><a href="boards.html">Boards</a></li>
+            <!-- this list links to my boards page -->
+        </ul>
+    </nav>
+
+    <!-- Main content section since the sidebar is aside and comes out 20% I decided to use a main container that sits right beside it and contains all the content  -->
+    <!-- The h1 element is should only be used once and its the first header screenreaders read  -->
+    <main>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                <img id="memeImg" src="images/meme.PNG">
+            </p>
+        </header>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer class="sfooter">
+        <!-- The side bar is attached to my footer so i named it sfooter for sidebar-footer its another unordered list The links right now just go to a placeholder page i made  -->
+        <ul>
+            <li><a href="placeholder.html">Privacy Policy</a></li>
+            <!-- this link would take the user to my privacy policy -->
+            <li><a href="placeholder.html">Terms & Conditions</a></li>
+            <!-- this link would take the user to my terms & conditions page -->
+            <li>&copy; 2021-2025 C0dejunky</li>
+            <!-- This list item just shows copywrite information -->
+        </ul>
+    </footer>
+    <!-- javascript would go here  -->
+</body>
+
+
+</html>

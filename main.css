@@ -1,0 +1,191 @@
+/* ________________________----------------general styles -----------_______________________________*/
+
+.body {
+    width: 100vw;
+    height: 100vh;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+ /* __________Comments for body general styles____________________ */
+  /* I kept viewport width and viewport height Like I said before I think when you set the body like that since everything else is a decendent of body I think it makes for a more responsive page everything and to me sans-serif is the easiest to read period and over all arial is the most widely accepted as far as accessability goes, then helvetica, then any general sans-serif  */
+
+
+  main {
+    position: fixed;
+    width: 78%;
+    height: 100%;
+    margin-left: 20%;
+    border: double 10px rgb(24, 55, 190);
+   }
+
+/* __________Comments for main content box____________________ */
+/* the mainbox holds all of my content and sits beside my navbar the position is fixed. I kept adding and subtracting width percentage until it fit on the page where i wanted it. There may be a better way to do that but im having trouble finding it. The margin left pushes the main content box to the right so the main content doesnt get stuck under the sidebar. Lastly I have a blue double 10px border around the main content box*/
+  
+    
+  h1 {
+    color: #ffffff;
+    background-image: url(images/backgrounds/header-bg.png);
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    top: 0;
+  }
+
+/* __________Comments for h1 heading____________________ */
+/* h1 is the most important heading there should only be one on a page I changed this to h1 so i could style the headers to look the same way to create a style throughout the pages 
+color: changes the text color to white, background-image uses an image to set the background (i didnt set the size because its just meant to favor the sidebar) I made the font-size 3em which I assumed should be ok for a arial considering its so popular im making the assumption that its scaleable but i should test it to be sure. Font-weight increases the thickness of the font border making it appear thicker. text-align: if the contents of the box dont fit (like most inputs are default to take up the 100% width unless you specify not) if the input only takes up like 20% of that text-align center horizontally aligns it to the center. I thought top zero would bring it all the way to the top but it didnt just brought it even with my first nav link which worked out well
+*/
+
+  header {
+    width: 100%;
+    height: 50%;
+    background-color: aliceblue;
+  
+  }
+  
+/* __________Comments for header general styles____________________ */
+    
+#memeImg {
+    margin-left: 20%;
+    top: 30%;
+    box-shadow: darkblue 5px 10px 15px ;
+ }
+
+ /* __________Comments for #memeImg____________________ */
+ /* instead of having this as headerimg like I did before I finally figured out the ID I wasnt capitalizing the "i" in memeimg but i ended up figuring it out. then I used top to off set it from the top most margin by 30%  and gave the background a slight difference. (ive seen section designs like this and i was curious how one could do that i think i did it!) then I gave it a box shadow effect. Box shadow effect is similar to border except it drops a shadow under each line from top -->right---->bottom---->left if you want all four sides to show a shadow you have to assign a px amount just to emphasize the image.  */
+
+ .objectives {
+  border: yellow 4px solid;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 8px;
+  margin: 8px;
+  text-align: left;
+ }
+ /* __________Comments for objectives general styles____________________ */
+ /* I couldnt get the p element to play nice with a single css style that would work for both so i gave them each a different class well I gave the img on the index page the ID and gave the p on the boards page a class of "objectives | I gave it a font size of 20px because i wasnt happy with how 1 or 2 em looked and took a note from the assignment and added a line-height of 30px | I used 8px for the padding and margin (i read somewhere that you shoudl do multiples of 8 for even asthetically pleasing spacing so 8px, 16px, 24px ect */
+
+ .objectives li{
+  background-color: white;
+  list-style-type: none;
+  padding: 8px;
+  margin: 8px;
+ }
+
+ /* __________Comments for objectives list items____________________ */
+ /*  list style type takes the default bullets away from the list items | i thought about putting something different instead of aliceblue for the background so i made the background I did padding and margin again on the list items to center the list as a whole */
+
+ .objectives li:hover{
+    font-size: larger;
+    font-weight: bold;
+    box-shadow: black 2px 2px 2px 2px;
+ }
+  
+  /* __________Comments for objectives hover action____________________ */
+  /* Then finally  I didnt have to repeat the white background here even though background are default transparent after the body because i already made the background white. for readability I wanted to make the text larger bolder and with a shadow so you could keep up with which line you are on. I know when im having a bad day with my lupus fog i loose track of where im at while reading easily*/
+  
+  
+  .sidebar {
+    background-image: url(images/backgrounds/sidebbg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: -1;
+    border-top-right-radius: 1em;
+  }
+
+    /* __________Comments for sidebar general styles ________________*/
+    /* all 3 of the first styles combine help me with the background of the sidebar background-image tells the css where to find the image i want to use. I dont want it to repeat. and i want it to stretch the picture to fill the content box | since the default position of elements is static I had to set the position to fixed in order to use the z-index which i set to -1 so i can put my footer on top of it| setting the top and left to 0 brings my side bar all the way to the left and all the way to the top I set height to take up 100% of the height and the width only 20% to leave room for my content | then my z-index of -1 which stacks this on the bottom and i rounded the top corner of my sidebar like we did in class with em so it would round relative to the space around it*/
+
+  .sidebar ul {
+    list-style-type: none;
+  }
+
+      /* __________Comments for sidebar list as a whole_______________ */
+  /* I used list style type here to take the bullets away from the list type   */
+
+  .sidebar li{
+    width: 90%;
+    margin: 8px;
+    padding: 8px;
+    line-height: 2em;
+ }
+  
+         /* __________Comments for sidebar links____________________ */
+  /*  */
+  
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    line-height: 3em;
+    color: #D3D3D3;
+    text-align: center;
+   
+   }
+  
+         /* __________Comments for ____________________ */
+  /* text-align center wouldnt work unless i set the display to block which I guess i knew that already but i dont normally have to set it im not sure why i had to in this instance but when i remove display block it aligns left. I made the font size 2em to adjust with the screen and line height seemed to work best as em then I added a text shadow which from waht I can tell does the same thing as box-shadow except it does it with text so I made it so when you hover the text ends up with a black shadow which really just adds a black border makes it stand out a bit more   */
+
+  .sidebar a:hover {
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 3em;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  
+
+         /* __________Comments for when you hover over a link ____________________ */
+  /* text-align center wouldnt work unless i set the display to block which I guess i knew that already but i dont normally have to set it im not sure why i did in this instance but when i remove display block it aligns left. I made the font size 2em to adjust with the screen and line height seemed to work best as em then I added a text shadow which from waht I can tell does the same thing as box-shadow except it does it with text so I made it so when you hover the text ends up with a black shadow which really just adds a black border makes it stand out a bit more   */
+  
+  .sfooter {
+    width: 20%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #e270ffcd;
+    z-index: 1;
+      }
+
+        /* __________Comments for sfooter (sidebar footer)____________________ */
+  /* ok since this is the footer for my sidebar content I wanted its width to be the same as sidebar so i set it to 20% and the position is fixed so z-index will stack it above the sidebar left and bottom sticks it all the way to the left and all the way to the bottom combined with position left right top and bottom define where it will be I made the background color an opac pink  */
+  
+
+  .sfooter ul {
+    list-style-type: none;
+  }
+  
+    /* __________Comments for footer list ____________________ */
+  /* removes the default bullets */
+
+  .sfooter li {
+    color: #D3d3d3;
+    text-align: center;
+  }
+
+    /* __________Comments for footer list items____________________ */
+  /* Im pretty sure the default for list items is block thats why text-align center works i have more experince with list items than anything. I kept the text resting state grey  */
+
+
+  .sfooter a {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(229, 229, 229);
+    }
+        /* __________Comments for list item hover ____________________ */
+  /* 20px for the font and line height of 30 seemed to work best here I removed the default underline and blue color using text-decoragion and kept the color resting state grey */
+
+  .sfooter a:hover {
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-weight: 600;
+  }
+
+          /* __________Comments for list item hover ____________________ */
+  /* to emphasise the links footer links when hovered i did the same as the sidebar added weight a bright white and a text shadow */
